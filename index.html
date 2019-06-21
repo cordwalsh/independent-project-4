@@ -10,20 +10,20 @@
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron">
+      <div class="jumbotron" style ="background-image: url(img/Pizza_Planet.jpg); background-size: 100%;">
         <h1>Welcome to pizza planet!</h1>
       </div>
         <form id="toppings-dropdown">
-          <h3> Please select your size</h3>
-          <select class="form-control" id="title" name ="sizes">
-            <option>Mars (Small)</option>
-            <option>Earth (Medium)</option>
-            <option>Uranus (Large)</option>
-            <option>Jupiter (X Large)</option>
+          <h3> Please select your cruiser</h3>
+          <select class="form-control" id="selectedSize" name ="sizes">
+            <option id ="selectedApollo" value="5">Apollo (Small)</option>
+            <option id ="selectedOrion" value="7">Orion (Medium)</option>
+            <option id ="selectedBfr" value="9">BFR (Large)</option>
+            <option id ="selectedIss" value="12">International Space Station (X Large)</option>
           </select>
           <br>
   <br>
-        <h3> Please select your toppings</h3>
+        <h3> Please select your Gear</h3>
           <input type="checkbox" name="topping" value="1.00" id="selectedCheese" /> Extra Cheese
           <br>
           <input type="checkbox" name="topping" value="2.00" id="selectedPepperoni" /> Pepperoni
