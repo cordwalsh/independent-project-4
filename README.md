@@ -37,6 +37,8 @@ Github at https://github.com/cordwalsh
 
 ## Technologies Used
 
+Header animation from https://codepen.io/ulrikapan/pen/MvppPL
+
 HTML. CSS. Bootstrap. Javascript. Jquery
 
 Copyright (c) 2019 Cord Walsh
