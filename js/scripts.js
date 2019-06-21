@@ -4,7 +4,6 @@ function Pizza (size, toppings) {
 }
 var yourPizza;
 var selectedToppings=[];
-
 Pizza.prototype.amountTotal = function (selectedSize) {
   var total = 0;
   for (i = 0; i < selectedToppings.length; ++i) {

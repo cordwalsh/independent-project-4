@@ -12,6 +12,7 @@ button {
 #results {
   display: none;
 }
+/* /////////// */
 
 .neonText {
   text-align: center;
@@ -29,7 +30,6 @@ button {
 .neonText h1 span:nth-child(1) {
   animation: flash 2s infinite ease-in 0.5s;
 }
-
 @keyframes flash {
   0% {
     text-shadow: 0px 0px 10px #78E0F2, 0px 0px 20px #78E0F2, 0px 0px 30px #78E0F2, 0px 0px 40px #78E0F2, 0px 0px 50px #78E0F2;
