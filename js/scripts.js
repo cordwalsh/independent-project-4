@@ -5,19 +5,13 @@ function Pizza (size, toppings) {
 var yourPizza;
 var selectedToppings=[];
 
-
-function amountTotal(selectedSize) {
+Pizza.prototype.amountTotal = function (selectedSize) {
   var total = 0;
-  console.log(selectedToppings);
-  console.log(selectedSize);
   for (i = 0; i < selectedToppings.length; ++i) {
     total += parseInt(selectedToppings[i]);
   }
-  console.log(total);
-
   return total + selectedSize;
 }
-
 
 // //////////////////
 
@@ -39,10 +33,6 @@ $(document).ready(function () {
       $.each($("input[name='topping']:checked"), function(){
         selectedToppings.push($(this).val());
       });
-      $(".pizzaTotal").text(amountTotal(parseInt(selectedSize)));
-      console.log(selectedSize)
-      console.log(selectedToppings)
-      console.log(yourPizza)
-
+      $(".pizzaTotal").text(yourPizza.amountTotal(parseInt(selectedSize)));
 });
 });
